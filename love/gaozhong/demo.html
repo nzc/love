@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ivy</title>
+<script type="text/javascript" src="swfobject.js"></script>
+<style type="text/css">	
+	html {
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	#flashcontent {
+		height: 100%;
+	}
+
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		background-color: #000000;
+		color:#ffffff;
+		font-family:sans-serif;
+		font-size:40;
+	}
+
+	a {	
+		color:#cccccc;
+	}
+</style>
+</head>
+<body>
+
+	<div id="flashcontent">
+	    <a href="http://get.adobe.com/cn/flashplayer/"></a>
+ 	</div>
+	<script type="text/javascript">
+		var fo = new SWFObject("TiltViewer.swf", "viewer", "100%", "100%", "9.0.28", "#000000");	
+		fo.addVariable("useFlickr", "false");
+		fo.addVariable("xmlURL", "gallery.xml");
+		fo.addVariable("maxJPGSize","640");	
+		fo.addVariable("useReloadButton", "false");
+		fo.addVariable("columns", "5");
+		fo.addVariable("rows", "5");		
+		fo.addParam("allowFullScreen","true");
+		fo.write("flashcontent");			
+	</script>
+</body>
+</html>
